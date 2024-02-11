@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#calculator{
+    max-width: 500px;
+    background: hsla(0, 0%, 0%, 0.329);
+    padding: 40px;
+    border-radius: 26px;
+
+}
+
+button{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    background: hsl(0, 0%, 25%);
+}
+.cal-button{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+button:hover{
+    background: hsl(0, 0%, 10%);
+}
+button:active{
+    background: hsl(0, 0%, 25%);
+}
+.oparator{
+    background-color:hsla(36, 100%, 50%, 0.818);
+}
+.oparator:hover{
+    background-color:hsla(36, 100%, 50%, 0.447);
+}
+.oparator:active{
+    background-color:hsl(36, 100%, 50%);
+}
+.clear-button{
+    background-color: green;
+}
+.clear-button:hover{
+    background-color: rgba(0, 128, 0, 0.631);
+}
+.clear-button:active{
+    background-color: rgb(5, 183, 5);
+}
+#display{
+    width: 100%;
+    height: 90px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    background: hsla(0, 0%, 0%, 0.232);
+    margin-bottom: 15px;
+    font-size: 40px;
+    padding: 10px 10px;
+    color: #fff;
+}
+.back-button{
+    font-size: 23px;
+    background-color: red;
+    
+}
+.back-button:hover{
+    background-color: rgba(255, 0, 0, 0.423);
+}
+.back-button:active{
+    background-color: rgba(255, 0, 0, 0.855);
+    
+}
+input::placeholder{
+    color: rgba(175, 175, 173, 0.625);
+    text-align: center;
+}
+
+@media only screen and (max-width:576px) {
+    #calculator{
+        width: 100%;
+        padding: 20px;
+    }
+    button{
+        width: 70px;
+        height: 70px;
+    }
+    body{
+        padding: 0 10px;
+    }
+    input::placeholder{
+        color: rgba(175, 175, 173, 0.625);
+        text-align: center;
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="calculator">
+
+        <div class="cal-display">
+            <input type="text" id="display" placeholder="Design by-Maruf">
+        </div>
+
+        <div class="cal-button">
+            
+            <button onclick="appendDisplay('**')" class="oparator">^</button>
+            <button onclick="appendDisplay('%')" class="oparator">%</button>
+            <button onclick="appendDisplay('/')" class="oparator">÷</button>
+            <button onclick="clearDisplay()" class="clear-button">C</button>
+            <button onclick="appendDisplay(7)">7</button>
+            <button onclick="appendDisplay(8)">8</button>
+            <button onclick="appendDisplay(9)">9</button>
+            <button onclick="appendDisplay('*')" class="oparator">×</button>
+            <button onclick="appendDisplay(4)">4</button>
+            <button onclick="appendDisplay(5)">5</button>
+            <button onclick="appendDisplay(6)">6</button>
+            <button onclick="appendDisplay('-')" class="oparator">-</button>
+            <button onclick="appendDisplay(1)">1</button>
+            <button onclick="appendDisplay(2)">2</button>
+            <button onclick="appendDisplay(3)">3</button>
+            <button onclick="appendDisplay('+')" class="oparator">+</button>
+            <button class="back-button" onclick="backDisplay()">DEL</button>
+            <button onclick="appendDisplay(0)">0</button>
+            <button onclick="appendDisplay('.')">.</button>
+            <button onclick="calculateValue()" class="oparator">=</button>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
